@@ -32,8 +32,10 @@ snippet reqr
 	require_relative "${1}"${2}
 snippet #
 	# =>
-snippet end
+snippet _end
 	__END__
+snippet _file
+	__FILE__
 snippet case
 	case ${1:object}
 	when ${2:condition}
@@ -868,7 +870,7 @@ snippet wants
 snippet wc
 	where(${1:"conditions"}${2:, bind_var})
 snippet wh
-	where(${1:field} => ${2:value})
+	where(${1:field}: ${2:value})
 snippet xdelete
 	xhr :delete, :${1:destroy}, :id => ${2:1}${3}
 snippet xget
